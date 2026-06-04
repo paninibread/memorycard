@@ -47,7 +47,16 @@ function App() {
       <ul>
         {games.map((g: any) => (
           <li key={g.id}>
-            {g.title} - {g.status}
+            {g.title} - {g.status} - 
+            
+            <button
+              onClick={async () => {
+                await fetch(`http://localhost:3000/games/${g.id}`, {
+                  method: "DELETE",
+                });
+                fetchGames();
+              }}
+            > Delete </button>  
           </li>
         ))}
       </ul>

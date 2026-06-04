@@ -43,22 +43,18 @@ app.post("/games", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+app.delete("/games/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    await pool.query("DELETE FROM games WHERE id = $1", [id]);
+    res.json({ message: "Game deleted" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Server error" });
+  }
 });
 
-app.post("/games", async (req, res) => {
-  try {
-    const { title, status } = req.body;
-
-    const result = await pool.query(
-      "INSERT INTO games (title, status) VALUES ($1, $2) RETURNING *",
-      [title, status]
-    );
-
-    res.status(201).json(result.rows[0]);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Failed to create game" });
-  }
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
 });
