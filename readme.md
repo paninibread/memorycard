@@ -7,6 +7,9 @@ Choosing what video game I want to pick up next has been a problem for me as lon
 The project was built to gain hands-on experience with modern full-stack development technologies using AI assisted development and common software engineering practices, including REST APIs, 
 relational databases, frontend-backend integration, and source control workflows.
 
+## Preview
+
+![memorycard Home](screenshots/ver 0/Home.gif)
 
 ## Features
 
@@ -17,16 +20,31 @@ relational databases, frontend-backend integration, and source control workflows
 - Persist data in PostgreSQL
 - REST API built with Express
 - React frontend consuming backend APIs
+- (New) Delete games from the collection
 
 ### Planned Features
 
-- Delete games from the collection
+- ~~Delete games from the collection~~ - Completed ✓
 - Edit game status
 - Search games by title
 - Filter by status
 - User authentication
 
+## Current Status
 
+MVP in active development.
+
+Completed:
+- Database integration
+- Create game functionality
+- View game collection
+- Delete game functionality
+- Frontend/backend integration
+
+Currently Working On:
+- Update game status
+- Search and filtering
+- UI improvements
 
 ## Tech Stack
 
@@ -114,7 +132,7 @@ Some concepts explored while building this project:
 
 ### Phase 2
 
-- [ ] DELETE endpoint
+- [x] DELETE endpoint
 - [ ] Update game status
 - [ ] Search functionality
 - [ ] Filter by status

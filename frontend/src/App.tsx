@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div>
-      <h1>Memory Card</h1>
+      <h1>memorycard</h1>
 
       <input
         value={title}
