@@ -9,7 +9,7 @@ relational databases, frontend-backend integration, and source control workflows
 
 ## Preview
 
-![memorycard Home](screenshots/ver 0/Home.gif)
+![memorycard Home](screenshots/v0/Home.gif)
 
 ## Features
 
