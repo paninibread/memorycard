@@ -7,9 +7,6 @@ Choosing what video game I want to pick up next has been a problem for me as lon
 The project was built to gain hands-on experience with modern full-stack development technologies using AI assisted development and common software engineering practices, including REST APIs, 
 relational databases, frontend-backend integration, and source control workflows.
 
-## Preview
-
-![memorycard Home](screenshots/v0/Home.gif)
 
 ## Features
 
@@ -22,10 +19,27 @@ relational databases, frontend-backend integration, and source control workflows
 - React frontend consuming backend APIs
 - (New) Delete games from the collection
 
+## Preview
+Home page
+![memorycard Home](screenshots/v0.0001/Home.png)
+
+<details close> <Summary> <H3> Click here for more previews </H3> </Summary>
+
+### Add Game
+![memorycard Add Game](screenshots/v0.0001/AddGame.gif)
+
+### Edit Game
+![memorycard Edit Game](screenshots/v0.0001/EditGame.gif)
+
+### Delete Game
+![memorycard Delete Game](screenshots/v0.0001/DeleteGame.gif)
+
+</details>
+
 ### Planned Features
 
 - ~~Delete games from the collection~~ - Completed ✓
-- Edit game status
+- ~~Edit game status~~ - Completed ✓
 - Search games by title
 - Filter by status
 - User authentication
@@ -40,9 +54,9 @@ Completed:
 - View game collection
 - Delete game functionality
 - Frontend/backend integration
+- Update game status
 
 Currently Working On:
-- Update game status
 - Search and filtering
 - UI improvements
 
@@ -66,7 +80,6 @@ Currently Working On:
 
 ### Development Tools
 
-- OpenAI Codex
 - Github Copilot
 - Git
 - GitHub
@@ -121,23 +134,7 @@ Some concepts explored while building this project:
 - Using Git and GitHub for version control
 
 
-## Roadmap
 
-### Phase 1 - MVP
-
-- [x] Database setup
-- [x] GET endpoint
-- [x] POST endpoint
-- [x] React frontend integration
-
-### Phase 2
-
-- [x] DELETE endpoint
-- [ ] Update game status
-- [ ] Search functionality
-- [ ] Filter by status
-- [ ] Improved styling
-- [ ] Authentication
 
 ## Future Improvements
 

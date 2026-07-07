@@ -80,14 +80,17 @@ function GameDetails() {
       }}>
         Edit Game
       </button>
+      &nbsp;
       <button onClick={async () => {
         await deleteGame();
       }}>
         Delete Game
       </button>
-
+      
       <div>
-        <Link to="/">Back to Games</Link>
+        <Link to="/" className="game-link">
+          Back to Games
+        </Link>
       </div>
     
       {showEditModal && (

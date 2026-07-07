@@ -44,7 +44,9 @@ function App() {
         {games.map((g: any) => (
           <li key={g.id}>
             
-            <Link to={`/games/${g.id}`}>{g.title} </Link> 
+            <Link to={`/games/${g.id}`} className="game-link">
+              {g.title}
+            </Link> 
             - {g.status}
           </li>
         ))}
